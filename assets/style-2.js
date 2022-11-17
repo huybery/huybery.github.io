@@ -52,7 +52,7 @@ const authordecoration = "none";
 const authorstyle = "normal";
 
 const selfcolor = highlightcolor;
-const selfweight = 800;
+const selfweight = 700;
 const selfdecoration = "none";
 const selfstyle = "normal";
 
@@ -76,9 +76,9 @@ const instyearsize = "11px";
 //         }
 
 // Works for sans serif, change otherwise
-$("head").append("<link href='https://fonts.googleapis.com/css2?family=" + fontname + ":wght@" + fontweights.join(';') + "&display=swap' rel='stylesheet' type='text/css'>");
+// $("head").append("<link href='https://fonts.googleapis.com/css2?family=" + fontname + ":wght@" + fontweights.join(';') + "&display=swap' rel='stylesheet' type='text/css'>");
 // $("head").append("<link href='https://fonts.yecdn.com/css2?family=" + fontname + ":wght@" + fontweights.join(';') + "&display=swap' rel='stylesheet' type='text/css'>");
-$("body").css("font-family", fontname);
+// $("body").css("font-family", fontname);
 
 $("body").css("color", basecolor);
 $("body").css("font-weight", bodyfontweight);
