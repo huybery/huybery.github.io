@@ -12,7 +12,7 @@
 
     <link href="./images/nicons/qwen_logo.webp" rel="icon"
         sizes="16x16" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style-2.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/huybery/huybery.github.io@aa15407/assets/font-awesome.min.css"
         rel="stylesheet">
@@ -22,60 +22,117 @@
 
 <body>
     <!-- <h1>Hello, world!</h1> -->
-    <div class="container pt-5 allstuffp">
-        <div class="row pt-5 allstuff">
+    <div class="container-fluid py-4">
+        <div class="row g-4">
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                <div class="position-sticky top-0 pt-4 text-center">
+                    <h1 class="display-6 mb-4"><b>Binyuan Hui</b></h1>
 
-            <div class="col-md-3 pt-5">
-                <div class="fixed-posi text-center">
-                    <p class="name"><b>Binyuan Hui</b></p>
+                    <img class="img-fluid rounded-circle mb-4 shadow-sm" style="max-width: 200px;"
+                        src="https://cdn.jsdelivr.net/gh/huybery/huybery.github.io@aa15407/images/profile.jpg"
+                        alt="Binyuan Hui">
 
-                    <img class="profilepic pt-2 pb-4"
-                        src="https://cdn.jsdelivr.net/gh/huybery/huybery.github.io@aa15407/images/profile.jpg">
-
-                    <div>
-                        <a class="menulink" href="https://scholar.google.com/citations?user=RBb3ItMAAAAJ&hl=zh-CN"
-                            target="_blank">Scholar</a> /
-                        <a class="menulink" href="https://github.com/huybery" target="_blank">Github</a> /
-                        <a class="menulink" href="https://twitter.com/huybery" target="_blank">Twitter</a>
+                    <div class="d-flex justify-content-center gap-3 mb-4">
+                        <a class="text-decoration-none link-primary" href="https://scholar.google.com/citations?user=RBb3ItMAAAAJ&hl=zh-CN"
+                            target="_blank">Scholar</a>
+                        <span class="text-muted">/</span>
+                        <a class="text-decoration-none link-primary" href="https://github.com/huybery" target="_blank">Github</a>
+                        <span class="text-muted">/</span>
+                        <a class="text-decoration-none link-primary" href="https://twitter.com/huybery" target="_blank">Twitter</a>
                     </div>
-                    <a href="https://badges.toozhao.com/stats/01GJHN9Z4EA8HEDD6ZAS4530VJ"><img
-                            src="https://badges.toozhao.com/badges/01GJHN9Z4EA8HEDD6ZAS4530VJ/orange.svg" /></a>
+                    <a href="https://badges.toozhao.com/stats/01GJHN9Z4EA8HEDD6ZAS4530VJ" class="d-block">
+                        <img class="img-fluid" src="https://badges.toozhao.com/badges/01GJHN9Z4EA8HEDD6ZAS4530VJ/orange.svg" 
+                            alt="Profile Badge" />
+                    </a>
                 </div>
             </div>
             
-            <div class="col-md-9 pt-3 about">
-                I am currently a researcher at <img style="width: 3%;"
-                src="./images/nicons/logo.png"> <a href="https://github.com/QwenLM">Alibaba Qwen Team</a>.
-                In addition, I am the initiator of <img style="width: 4%;"
-                src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/OD_logo.png"> <a href="https://github.com/OpenDevin/OpenDevin">OpenDevin</a>, dedicated to being a truly Open Code Agent.
-                My main research interests include:
-                <br> <br>
+            <div class="col-xl-9 col-lg-8 col-md-7">
+                <div class="about px-lg-4">
+                    <p class="lead mb-4">
+                        I am currently a researcher at 
+                        <img class="mx-1" style="height: 1.2em;" alt="Alibaba Logo" src="./images/nicons/logo.png"> 
+                        <a class="text-decoration-none link-primary" href="https://github.com/QwenLM">Alibaba Qwen Team</a>.
+                        In addition, I am the initiator of 
+                        <img class="mx-1" style="height: 1.5em;" alt="OpenDevin Logo" 
+                            src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/OD_logo.png"> 
+                        <a class="text-decoration-none link-primary" href="https://github.com/OpenDevin/OpenDevin">OpenDevin</a>, 
+                        dedicated to being a truly Open Code Agent.
+                    </p>
+                    <p class="h5 mb-4">My main research interests include:</p>
 
-                <ul class="pub">
-                    <li>
-                        🧙🏻‍♂️ <b style="text-decoration: underline;">Large Language Models</b>: Foundation Models
-                        <code>[Qwen][Qwen-Coder]</code>, reasoning & CoT <code>[Dater]</code>, in-context
-                        learning <code>[Deep-thinking]</code>.
+                <ul class="list-unstyled">
+                    <li class="mb-4">
+                        <div class="card border-0 shadow-sm hover-card">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3 d-flex align-items-center">
+                                    <span class="me-2">🧙🏻‍♂️</span>
+                                    <b>Large Language Models</b>
+                                </h3>
+                                <p class="mb-0 text-muted">
+                                    Foundation Models <span class="badge bg-primary bg-opacity-10 text-primary">[Qwen][Qwen-Coder]</span>, 
+                                    reasoning & CoT <span class="badge bg-primary bg-opacity-10 text-primary">[Dater]</span>, 
+                                    in-context learning <span class="badge bg-primary bg-opacity-10 text-primary">[Deep-thinking]</span>
+                                </p>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        👨🏻‍💻 <b>Executable Language</b>: Interaction with structure data (table / databases) by
-                        programming, including text-to-SQL <code>[R²SQL][S²SQL][SUN][STAR][Graphix-T5][BIRD]</code> and code generation <code>[OctoPack][Lemur]</code>.
+                    <li class="mb-4">
+                        <div class="card border-0 shadow-sm hover-card">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3 d-flex align-items-center">
+                                    <span class="me-2">👨🏻‍💻</span>
+                                    <b>Executable Language</b>
+                                </h3>
+                                <p class="mb-0 text-muted">
+                                    Interaction with structure data (table / databases) by programming, including 
+                                    text-to-SQL <span class="badge bg-primary bg-opacity-10 text-primary">[R²SQL][S²SQL][SUN][STAR][Graphix-T5][BIRD]</span> 
+                                    and code generation <span class="badge bg-primary bg-opacity-10 text-primary">[OctoPack][Lemur]</span>
+                                </p>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        🧠 <b>World Agent</b>: The ultimate intelligent, with omni-modal perception and embodied
-                        exploration. <code>[SPRING]</code>
+                    <li class="mb-4">
+                        <div class="card border-0 shadow-sm hover-card">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3 d-flex align-items-center">
+                                    <span class="me-2">🧠</span>
+                                    <b>World Agent</b>
+                                </h3>
+                                <p class="mb-0 text-muted">
+                                    The ultimate intelligent, with omni-modal perception and embodied exploration. 
+                                    <span class="badge bg-primary bg-opacity-10 text-primary">[SPRING]</span>
+                                </p>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        🦾 <del><b>Dialog Systems</b></del>: chatGPT is all your need.
+                    <li class="mb-4">
+                        <div class="card border-0 shadow-sm hover-card">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3 d-flex align-items-center">
+                                    <span class="me-2">🦾</span>
+                                    <del><b>Dialog Systems</b></del>
+                                </h3>
+                                <p class="mb-0 text-muted">
+                                    chatGPT is all your need.
+                                </p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
 
-                I am currently hiring self-motivated researcher & interns in Beijing / Hangzhou / Shanghai. Please feel free to contact me with
-                the subject line "Interested in Qwen Team + Your Name" with your resume.
-                <br>
-                📮 <code>binyuan.hby [at] alibaba-inc.com</code>
+                <div class="alert alert-info mb-4">
+                    <h5 class="alert-heading">📢 Open Positions</h5>
+                    <p class="mb-2">
+                        I am currently hiring self-motivated researcher & interns in Beijing / Hangzhou / Shanghai. 
+                        Please feel free to contact me with the subject line "Interested in Qwen Team + Your Name" with your resume.
+                    </p>
+                    <p class="mb-0">
+                        📮 <code class="bg-light">binyuan.hby [at] alibaba-inc.com</code>
+                    </p>
+                </div>
 
-                <p class="header pt-3">🔥 <b>News</b> </p>
+                <h2 class="h4 mb-4">🔥 <b>News</b></h2>
                 <p class="paper my-2 pl-2">[2024.05] 3 paper got accepted by ACL 2024. </p>
                 <p class="paper my-2 pl-2">[2024.01] 2 paper got accepted by ICLR 2024 as <a><b> Spotlight </b></a>!
                 </p>
@@ -101,207 +158,196 @@
                 <!-- <p class="paper my-2 pl-2">[2022.07] 2 paper got accepted by COLING 2022. </p> -->
                 <p class="paper my-2 pl-2">[2022.05] 1 paper got accepted by KDD 2022. </p>
 
-                <p class="header pt-4">📝 <b>Selected Publications</b> <span class="noter" style="color:#7d7d7d"> (* =
-                        equal
-                        contribution | # = I mentored)</span>
-                </p>
+                <h2 class="h4 mb-4">📝 <b>Selected Publications</b></h2>
+                <p class="text-muted small mb-4">* = equal contribution | # = I mentored</p>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Qwen2.5-Coder Technical Report</span>
-                        <br>
-                        <span class="thisauthor">Binyuan Hui</span>, Jian Yang, Zeyu Cui, Jiaxi Yang, et al.
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> Report </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2409.12186"
-                            target="_blank">
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/QwenLM/Qwen2.5-Coder" target="_blank">
-                            <i class="fa fa-github-alt" aria-hidden="true"></i> Repo
-                        </a>
+                <div class="publications">
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Qwen2.5-Coder Technical Report</h3>
+                            <p class="text-muted mb-3">
+                                <span class="fw-medium">Binyuan Hui</span>, Jian Yang, Zeyu Cui, Jiaxi Yang, et al.
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-primary">Report</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2409.12186" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/QwenLM/Qwen2.5-Coder" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Qwen2 Technical Report</h3>
+                            <p class="text-muted mb-3">
+                                An Yang, Baosong Yang, <span class="fw-medium">Binyuan Hui</span>, Bo Zheng, Bowen Yu, Chang Zhou, et al.
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-primary">Report</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2309.16609" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/QwenLM/Qwen2.5" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Qwen Technical Report</h3>
+                            <p class="text-muted mb-3">
+                                <span class="fw-medium">Qwen Team</span>, Alibaba Group
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-primary">Report</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2309.16609" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/QwenLM/Qwen" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">OctoPack: Instruction Tuning Code Large Language Models</h3>
+                            <p class="text-muted mb-3">
+                                Niklas Muennighoff, Qian Liu, Armel Zebaze, Qinkai Zheng, <span class="fw-medium">Binyuan Hui</span>, 
+                                Terry Yue Zhuo, Swayam Singh, Xiangru Tang, Leandro von Werra, Shayne Longpre
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">ICLR 2024</span>
+                                <span class="badge bg-success">⭐️ Spotlight</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2308.07124" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/bigcode-project/octopack" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Lemur: Harmonizing Natural Language and Code for Language Agents</h3>
+                            <p class="text-muted mb-3">
+                                Yiheng Xu*, Hongjin Su*, Chen Xing*, Boyu Mi, Qian Liu, Weijia Shi, 
+                                <span class="fw-medium">Binyuan Hui</span>, Fan Zhou, Yitao Liu, Tianbao Xie, Zhoujun Cheng,
+                                Siheng Zhao, Lingpeng Kong, Bailin Wang, Caiming Xiong, Tao Yu
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">ICLR 2024</span>
+                                <span class="badge bg-success">⭐️ Spotlight</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2310.06830" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/OpenLemur/Lemur" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://xlang.ai/" target="_blank">
+                                    <i class="fa fa-home" aria-hidden="true"></i> Homepage
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://huggingface.co/OpenLemur" target="_blank">
+                                    <i class="fa fa-download" aria-hidden="true"></i> Model
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://www.xlang.ai/blog/openlemur" target="_blank">
+                                    <i class="fa fa-book" aria-hidden="true"></i> Blog
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Iterative Forward Tuning Boosts In-context Learning in Language Models</h3>
+                            <p class="text-muted mb-3">
+                                Jiaxi Yang*, <span class="fw-medium">Binyuan Hui*#</span>, Min Yang, Binhua Li, Fei Huang,
+                                Yongbin Li
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">ACL 2024</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2305.13016" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://huggingface.co/spaces/huybery/deep-thinking" target="_blank">
+                                    <i class="fa fa-desktop" aria-hidden="true"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                         </span>
                     </p>
                 </div>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Qwen2 Technical Report</span>
-                        <br>
-                        An Yang, Baosong Yang, <span class="thisauthor"> Binyuan Hui </span> , Bo Zheng, Bowen Yu, Chang Zhou, et al.
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> Report </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2309.16609"
-                            target="_blank">
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/QwenLM/Qwen2.5" target="_blank">
-                            <i class="fa fa-github-alt" aria-hidden="true"></i> Repo
-                        </a>
-                        </span>
-                    </p>
-                </div>
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs</h3>
+                            <p class="text-muted mb-3">
+                                Jingyang Li*, <span class="fw-medium">Binyuan Hui*#</span>, Ge Qu*, Binhua Li, Jiaxi Yang,
+                                Bowen Li, Bailin Wang, et al.
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">NeurIPS 2023</span>
+                                <span class="badge bg-success">⭐️ Spotlight</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2305.03111" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://bird-bench.github.io/" target="_blank">
+                                    <i class="fa fa-cloud-download" aria-hidden="true"></i> LeaderBoard
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Qwen Technical Report</span>
-                        <br>
-                        <span class="thisauthor"> Qwen Team </span>, Alibaba Group
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> Report </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2309.16609"
-                            target="_blank">
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/QwenLM/Qwen" target="_blank">
-                            <i class="fa fa-github-alt" aria-hidden="true"></i> Repo
-                        </a>
-                        </span>
-                    </p>
-                </div>
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">PaCE: Unified Multi-modal Dialogue Pre-training with Progressive and Compositional Experts</h3>
+                            <p class="text-muted mb-3">
+                                Yunshui Li*, <span class="fw-medium">Binyuan Hui*#</span>, Zhichao Yin, Min Yang, Fei Huang,
+                                Yongbin Li
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">ACL 2023</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2305.14839" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/pace" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">OctoPack: Instruction Tuning Code Large Language Models</span>
-                        <br>
-                        Niklas Muennighoff, Qian Liu, Armel Zebaze, Qinkai Zheng, <span class="thisauthor">Binyuan
-                            Hui</span>, Terry Yue Zhuo, Swayam Singh, Xiangru Tang, Leandro von Werra, Shayne Longpre
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> ICLR 2024 (⭐️Spotlight) </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2308.07124" target="_blank">
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/bigcode-project/octopack" target="_blank">
-                            <i class="fa fa-github-alt" aria-hidden="true"></i> Code
-                        </a>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Lemur: Harmonizing Natural Language and Code for Language Agents</span>
-                        <br>
-                        Yiheng Xu*, Hongjin Su*, Chen Xing*, Boyu Mi, Qian Liu, Weijia Shi, <span
-                            class="thisauthor">Binyuan Hui</span>, Fan Zhou, Yitao Liu, Tianbao Xie, Zhoujun Cheng,
-                        Siheng Zhao, Lingpeng Kong, Bailin Wang, Caiming Xiong, Tao Yu
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> ICLR 2024 (⭐️Spotlight) </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2310.06830" target="_blank">
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/OpenLemur/Lemur" target="_blank">
-                            <i class="fa fa-github-alt" aria-hidden="true"></i> Code
-                        </a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://xlang.ai/" target="_blank"><i class="fa fa-home"
-                                aria-hidden="true"></i> Homepage
-                        </a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://huggingface.co/OpenLemur" target="_blank"><i class="fa fa-download"
-                                aria-hidden="true"></i> Model
-                        </a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://www.xlang.ai/blog/openlemur" target="_blank"><i class="fa fa-book"
-                                aria-hidden="true"></i> Blog
-                        </a>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Iterative Forward Tuning Boosts In-context Learning in Language
-                            Models</span>
-                        <br>
-                        Jiaxi Yang*, <span class="thisauthor">Binyuan Hui*#</span>, Min Yang, Binhua Li, Fei Huang,
-                        Yongbin Li
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> ACL 2024 </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2305.13016" target="_blank">
-                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://huggingface.co/spaces/huybery/deep-thinking" target="_blank">
-                            <i class="fa fa-desktop" aria-hidden="true"></i> Demo
-                        </a>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Can LLM Already Serve as A Database Interface? A BIg Bench for
-                            Large-Scale Database Grounded Text-to-SQLs</span>
-                        <br>
-                        Jingyang Li*, <span class="thisauthor">Binyuan Hui*#</span>, Ge Qu*, Binhua Li, Jiaxi Yang,
-                        Bowen Li, Bailin Wang, et al.
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> NeurIPS 2023 (⭐️Spotlight) </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2305.03111" target="_blank"><i
-                                class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird"
-                            target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> Code</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://bird-bench.github.io/" target="_blank"><i
-                                class="fa fa-cloud-download" aria-hidden="true"></i> LeaderBoard </a>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">PaCE: Unified Multi-modal Dialogue Pre-training with Progressive and
-                            Compositional Experts</span>
-                        <br>
-                        Yunshui Li*, <span class="thisauthor">Binyuan Hui*#</span>, Zhichao Yin, Min Yang, Fei Huang,
-                        Yongbin Li
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> ACL 2023 </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2305.14839" target="_blank"><i
-                                class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/pace"
-                            target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> Code</a>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Multimodal Recommendation Dialog with Subjective Preference: A New
-                            Challenge and Benchmark</span>
-                        <br>
-                        Yuxing Long*, <span class="thisauthor"> Binyuan Hui#</span>, Caixia Yuan, Fei Huang, Yongbin Li,
-                        Xiaojie Wang
-                        <br>
-                        <span class="conf">
-                            <a class="confshort""><b> ACL 2023 </b></a>
-                            <span class=" tagsep">|</span>
-                        <a class="tag" href="https://arxiv.org/abs/2305.18212" target="_blank"><i
-                                class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                        <span class="tagsep">|</span>
-                        <a class="tag" href="https://github.com/LYX0501/SURE" target="_blank"><i
-                                class="fa fa-github-alt" aria-hidden="true"></i> Code</a>
-                        </span>
-                    </p>
-                </div>
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Multimodal Recommendation Dialog with Subjective Preference: A New Challenge and Benchmark</h3>
+                            <p class="text-muted mb-3">
+                                Yuxing Long*, <span class="fw-medium">Binyuan Hui#</span>, Caixia Yuan, Fei Huang, Yongbin Li,
+                                Xiaojie Wang
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">ACL 2023</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2305.18212" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/LYX0501/SURE" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 <div class="py-2">
                     <p class="paper my-2 pl-2">
@@ -327,112 +373,104 @@
                     </p>
                 </div>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">SPRING: Situated Conversation Agent Pretrained with Multimodal
-                            Questions from Incremental Layout Graph</span>
-                        <br>
-                        Yuxing Long, <span class="thisauthor">Binyuan Hui#</span>, Fulong Ye, Yanyang Li, Zhuoxin Han,
-                        Caixia Yuan, Yongbin Li, Xiaojie Wang
-                        <br>
-                        <!-- <span class="conf"><i class="fa fa-trophy" aria-hidden="true"></i> New SOTA performance on SParC
-                            and CoSQL benchmark. </span>
-                        <br> -->
-                        <span class="conf">
-                            <a class="confshort" href="https://aaai-23.aaai.org/"><b>AAAI 2023 (Oral) </code></b></a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://arxiv.org/abs/2301.01949" target="_blank"><i
-                                    class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://github.com/LYX0501/SPRING" target="_blank"><i
-                                    class="fa fa-github-alt" aria-hidden="true"></i> Code</a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://mp.weixin.qq.com/s/JCN3RbCWkP6I3yw-6sS1Kg" target="_blank"><i
-                                    class="fa fa-book" aria-hidden="true"></i> Blog (Chinese) </a>
-                        </span>
-                    </p>
-                </div>
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">SPRING: Situated Conversation Agent Pretrained with Multimodal Questions from Incremental Layout Graph</h3>
+                            <p class="text-muted mb-3">
+                                Yuxing Long, <span class="fw-medium">Binyuan Hui#</span>, Fulong Ye, Yanyang Li, Zhuoxin Han,
+                                Caixia Yuan, Yongbin Li, Xiaojie Wang
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">AAAI 2023</span>
+                                <span class="badge bg-success">Oral</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2301.01949" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/LYX0501/SPRING" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://mp.weixin.qq.com/s/JCN3RbCWkP6I3yw-6sS1Kg" target="_blank">
+                                    <i class="fa fa-book" aria-hidden="true"></i> Blog (Chinese)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">Graphix-T5: Mixing Pre-Trained Transformers with Graph-Aware Layers for
-                            Text-to-SQL Parsing</span>
-                        <br>
-                        Jinyang Li, <span class="thisauthor">Binyuan Hui#</span>, Reynold Cheng, Bowen Qin, Chenhao Ma,
-                        Nan Huo, Fei Huang, Luo Si, Yongbin Li
-                        <br>
-                        <!-- <span class="conf"><i class="fa fa-trophy" aria-hidden="true"></i> New SOTA performance on SParC
-                            and CoSQL benchmark. </span>
-                        <br> -->
-                        <span class="conf">
-                            <a class="confshort" href="https://aaai-23.aaai.org/"><b>AAAI 2023 (Oral) </code></b></a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://arxiv.org/abs/2301.07507" target="_blank"><i
-                                    class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/graphix"
-                                target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> Code</a>
-                        </span>
-                    </p>
-                </div>
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Graphix-T5: Mixing Pre-Trained Transformers with Graph-Aware Layers for Text-to-SQL Parsing</h3>
+                            <p class="text-muted mb-3">
+                                Jinyang Li, <span class="fw-medium">Binyuan Hui#</span>, Reynold Cheng, Bowen Qin, Chenhao Ma,
+                                Nan Huo, Fei Huang, Luo Si, Yongbin Li
+                            </p>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">AAAI 2023</span>
+                                <span class="badge bg-success">Oral</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2301.07507" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/graphix" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">STAR: SQL Guided Pre-training for Context-dependent Text-to-SQL
-                            Parsing</span>
-                        <br>
-                        Zefeng Cai*, Xiangyu Li*, <span class="thisauthor">Binyuan Hui#</span>, Min Yang, Bowen Li,
-                        Binhua Li, Zheng Cao, Weijie Li, Fei Huang, Luo Si, Yongbin Li
-                        <br>
-                        <span class="conf"><i class="fa fa-trophy" aria-hidden="true"></i> New SOTA performance on SParC
-                            and CoSQL benchmark. </span>
-                        <br>
-                        <span class="conf">
-                            <a class="confshort" href="https://2022.emnlp.org/"><b>EMNLP 2022 </b></a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://arxiv.org/abs/2210.11888" target="_blank"><i
-                                    class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/star"
-                                target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> Code</a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://mp.weixin.qq.com/s/UY1kHrejt_Hd7A68Yk9PPA" target="_blank"><i
-                                    class="fa fa-book" aria-hidden="true"></i> Blog (Chinese) </a>
-                            <span class="tagsep">|</span>
-                            <a class="tag"
-                                href="https://modelscope.cn/models/damo/nlp_star_conversational-text-to-sql/summary"
-                                target="_blank"><i class="fa fa-cloud-download" aria-hidden="true"></i> ModelScope </a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="cites/emnlp22_star.bib" target="_blank"><i class="fa fa-download"
-                                    aria-hidden="true"></i> Cite</a>
-                        </span>
-                    </p>
-                </div>
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">STAR: SQL Guided Pre-training for Context-dependent Text-to-SQL Parsing</h3>
+                            <p class="text-muted mb-3">
+                                Zefeng Cai*, Xiangyu Li*, <span class="fw-medium">Binyuan Hui#</span>, Min Yang, Bowen Li,
+                                Binhua Li, Zheng Cao, Weijie Li, Fei Huang, Luo Si, Yongbin Li
+                            </p>
+                            <div class="alert alert-success mb-3 py-2">
+                                <i class="fa fa-trophy" aria-hidden="true"></i> New SOTA performance on SParC and CoSQL benchmark.
+                            </div>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">EMNLP 2022</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2210.11888" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/star" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://mp.weixin.qq.com/s/UY1kHrejt_Hd7A68Yk9PPA" target="_blank">
+                                    <i class="fa fa-book" aria-hidden="true"></i> Blog (Chinese)
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://modelscope.cn/models/damo/nlp_star_conversational-text-to-sql/summary" target="_blank">
+                                    <i class="fa fa-cloud-download" aria-hidden="true"></i> ModelScope
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="cites/emnlp22_star.bib" target="_blank">
+                                    <i class="fa fa-download" aria-hidden="true"></i> Cite
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="py-2">
-                    <p class="paper my-2 pl-2">
-                        <span class="papertitle">SUN: Exploring Intrinsic Uncertainties in Text-to-SQL Parsers</span>
-                        <br>
-                        Bowen Qin*, Lihan Wang*, <span class="thisauthor">Binyuan Hui*#</span>, Bowen Li, Xiangpeng Wei,
-                        Binhua Li, Fei Huang, Luo Si, Min Yang, Yongbin Li
-                        <br>
-                        <span class="conf"><i class="fa fa-trophy" aria-hidden="true"></i> Best paper recommonded,
-                            reviewer's score: 5 / 5 / 4 </span>
-                        <br>
-                        <span class="conf">
-                            <a class="confshort" href="https://coling2022.org/"><b> COLING 2022 </b> </a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://arxiv.org/abs/2209.06442" target="_blank"><i
-                                    class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/sunsql"
-                                target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> Code</a>
-                            <span class="tagsep">|</span>
-                            <a class="tag" href="cites/coling22_sun.bib" target="_blank"><i class="fa fa-download"
-                                    aria-hidden="true"></i> Cite</a>
-                        </span>
-                    </p>
-                </div>
+                    <div class="card mb-4 border-0 shadow-sm hover-card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">SUN: Exploring Intrinsic Uncertainties in Text-to-SQL Parsers</h3>
+                            <p class="text-muted mb-3">
+                                Bowen Qin*, Lihan Wang*, <span class="fw-medium">Binyuan Hui*#</span>, Bowen Li, Xiangpeng Wei,
+                                Binhua Li, Fei Huang, Luo Si, Min Yang, Yongbin Li
+                            </p>
+                            <div class="alert alert-success mb-3 py-2">
+                                <i class="fa fa-trophy" aria-hidden="true"></i> Best paper recommended, reviewer's score: 5 / 5 / 4
+                            </div>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                <span class="badge bg-warning">COLING 2022</span>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://arxiv.org/abs/2209.06442" target="_blank">
+                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/sunsql" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i> Code
+                                </a>
+                                <a class="btn btn-sm btn-outline-secondary" href="cites/coling22_sun.bib" target="_blank">
+                                    <i class="fa fa-download" aria-hidden="true"></i> Cite
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 <!-- <div class="py-2">
                     <p class="paper my-2 pl-2">
@@ -549,11 +587,8 @@
     </div>
 
     <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-
-    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/style-2.js"></script>
 </body>
