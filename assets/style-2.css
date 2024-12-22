@@ -1,4 +1,5 @@
 :root {
+    /* Light theme */
     --primary-color: #000;
     --accent-color: #a00;
     --text-color: #333;
@@ -7,12 +8,54 @@
     --hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     --transition-speed: 0.3s;
+    --card-bg: rgba(255, 255, 255, 0.6);
+    --badge-bg: rgba(0, 0, 0, 0.03);
+    --badge-hover: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] {
+    --primary-color: #f0f0f0;
+    --accent-color: #ff6b6b;
+    --text-color: #e0e0e0;
+    --bg-color: #1a1a1a;
+    --border-color: #404040;
+    --hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --card-bg: rgba(45, 45, 45, 0.6);
+    --badge-bg: rgba(255, 255, 255, 0.1);
+    --badge-hover: rgba(255, 255, 255, 0.15);
 }
 
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
     line-height: 1.6;
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    padding: 0.75rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: transform var(--transition-speed) ease;
+    color: var(--text-color);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
 }
 
 .instilogo {

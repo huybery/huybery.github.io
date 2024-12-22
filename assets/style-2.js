@@ -1,11 +1,36 @@
+// Theme toggle functionality
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // Update icon
+    const icon = document.getElementById('theme-icon');
+    icon.className = newTheme === 'dark' ? 'fa fa-moon-o' : 'fa fa-sun-o';
+}
+
+// Set initial theme
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    
+    const icon = document.getElementById('theme-icon');
+    if (icon) {
+        icon.className = savedTheme === 'dark' ? 'fa fa-moon-o' : 'fa fa-sun-o';
+    }
+});
+
 // Initialize font properties
 const fontname = "Ubuntu";
 const fontweights = [300, 400]
 
 // Color properties
-const basecolor = "#000";
-const accentcolor = "#a00";
-const highlightcolor = "#111";
+const basecolor = "var(--text-color)";
+const accentcolor = "var(--accent-color)";
+const highlightcolor = "var(--primary-color)";
 
 // const basecolor = "#888";
 // const accentcolor = "#222";
