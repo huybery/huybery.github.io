@@ -51,8 +51,30 @@ a:hover {
 
 .profilepic {
     width: 150px;
-    /* border-radius: 50%; */
-    /* filter: grayscale(100%); */
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    animation: fadeIn 1s ease-in;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto 15px;
+    vertical-align: bottom;
+    line-height: 0;
+}
+
+.profilepic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 768px) {
@@ -75,10 +97,9 @@ a:hover {
 
     .profilepic {
         width: 90px;
-        /* border-radius: 50%; */
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-        /* filter: grayscale(100%); */
+        border-radius: 6px;
+        margin: 0 auto 10px;
+        transition: all 0.5s ease;
     }
 
     .menur {
@@ -92,13 +113,55 @@ a:hover {
           text-decoration: underline;
     } */
 
+.name {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.name::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        rgba(15,52,96,0), 
+        rgba(15,52,96,0.8), 
+        rgba(15,52,96,0)
+    );
+    transform: scaleX(0.7);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.name:hover {
+    transform: translateY(-2px);
+}
+
+.name:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
 .social-links {
-    margin: 15px 0;
+    margin: 1.5rem 0;
+    letter-spacing: 0.05em;
 }
 
 .social-icon {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 12px;
     font-size: 20px;
     color: #666;
     transition: all 0.3s ease;
@@ -118,4 +181,9 @@ a:hover {
 
 .social-icon .fa-twitter:hover {
     color: #1da1f2;
+}
+
+.about {
+    line-height: 1.8;
+    letter-spacing: 0.01em;
 }
