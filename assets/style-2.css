@@ -91,3 +91,31 @@ a:hover {
           color: #111;
           text-decoration: underline;
     } */
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-icon .fa-graduation-cap:hover {
+    color: #4285f4;
+}
+
+.social-icon .fa-github:hover {
+    color: #333;
+}
+
+.social-icon .fa-twitter:hover {
+    color: #1da1f2;
+}
